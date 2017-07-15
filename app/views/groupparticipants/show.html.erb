@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @groupparticipant.user %>
+</p>
+
+<p>
+  <strong>Groupdescription:</strong>
+  <%= @groupparticipant.groupDescription %>
+</p>
+
+<%= link_to 'Edit', edit_groupparticipant_path(@groupparticipant) %> |
+<%= link_to 'Back', groupparticipants_path %>

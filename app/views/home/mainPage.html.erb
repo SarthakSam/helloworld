@@ -1,2 +1,58 @@
-<h1>Home#mainPage</h1>
-<p>Find me in app/views/home/mainPage.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MAIN PAGE</title>
+</head>
+<body>
+<header>
+<%= link_to "SignOut",destroy_user_session_path,method: :DELETE %>	
+</header>
+<main>
+<section id="left">
+<nav class="profile">
+<div class="first">
+<a>userImage</a>
+</div>
+<div class="second">
+<h2><%= current_user.username %></h2>
+<h3>status</h3>
+</div>
+</nav>
+
+<nav class="chat">
+<form action="home/startchat" method="POST">
+<input type="text" name="username" value="Start a chat" >
+</form>
+
+<form action="home/invitecontact" method="POST">
+<input type="submit" name="contact" value="Invite a Contact">
+</form>
+
+<form action="home/creategroup" method="POST">
+<input type="submit" name="group" value="create a group">
+</form>
+</nav>
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+<section id="middle">
+
+
+
+</section>
+<section id="right"></section>	
+
+
+</main>
+</body>
+</html>

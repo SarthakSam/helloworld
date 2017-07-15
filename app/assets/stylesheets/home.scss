@@ -1,3 +1,43 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+	padding:0;
+	margin:0;
+}
+main{
+    display:flex;
+    height:945px;
+	#left{
+        Width:15%;
+        background-color:red;
+        
+          nav.profile{
+           height:50px;
+           width:100%;
+           display:flex;
+           background-color:green;
+          }
+
+           nav.chat{
+
+           }
+	}
+
+	#middle{
+        width:55%;
+               background-color:blue;
+	}
+
+	#right{
+        flex-grow:1;
+               background-color:red;
+	}
+}
+
+#emailspage{
+  margin-left:35%;
+  margin-top:15%;
+  background-color:red;
+  width:500px;
+  height:500px;
+
+
+}
