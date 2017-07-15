@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   post '/home/invitecontact'
   post '/home/creategroup'
   get '/home/invitecontact'
-  post '/home/sendmail'
+  post '/home/sendmail'=>'home#sendmail'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -3,7 +3,8 @@ class ProjectMailer < ApplicationMailer
 
     def confirmation_email(user)
     @user = user
-    mail(to: @user.email, subject: 'FriendRequest')
+    u=User.where(username: @user)[0];
+    mail(to: u.email, subject: 'FriendRequest')
   end
 
 end
