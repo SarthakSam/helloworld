@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   devise_for :views
   resources :groupparticipants
   devise_for :users,:controllers=>{registrations:'registrations'}
-  get 'home/mainPage'
-  get '/'=> 'home#mainPage'
+  get 'home/mainPage' =>'home#mainPage'
+  get 'home/index'=> 'home#index'
   post '/home/startchat'
   post '/home/invitecontact'
   post '/home/creategroup'

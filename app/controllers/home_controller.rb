@@ -5,6 +5,9 @@ class HomeController < ApplicationController
   puts @chats,"hello";
   end
 
+  def index
+  end
+  
   def startchat
   secPerson=params[:username];
   end
