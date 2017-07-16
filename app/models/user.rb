@@ -5,7 +5,14 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable,:confirmable
 
    def user_name
-   	puts username;
+   	
      return username;
-   end      
+   end     
+
+   
+  def  memberofgroup
+    member = GroupMember.where(user_id: id).pluck(:groupDescription_id);  
+    GroupDescription.where(id: member).pluck(:groupname);
+  end
+
 end

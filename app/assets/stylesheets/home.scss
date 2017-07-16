@@ -5,9 +5,10 @@
 main{
     display:flex;
     height:945px;
+    width:100%;
 	#left{
         Width:15%;
-        background-color:red;
+        background-color:#f2f2f2;
         
           nav.profile{
            height:50px;
@@ -22,13 +23,44 @@ main{
 	}
 
 	#middle{
-        width:55%;
-               background-color:blue;
+        width:62%;
+       background-color:white;
+        height:100%;
+        border:inline;
+        border-width: 1px ;
+        border-color:grey;
+          nav#inbetween{
+        #one{
+            height:15%;
+            border-bottom: bold;
+            border-width: 2px ;
+            border-color:grey;
+            background-color:blue;
+        }
+        #two{
+            height:60%;
+            border-bottom: inline;
+            border-color:grey;
+            border-width: 1px ;
+        }
+        #three{
+            height:10%;
+            border-bottom: inline;
+            border-color:grey;
+            border-width: 1px ;
+        }
+        #four{
+            height:15%;
+            border-bottom: 2px;
+            border-color:grey;
+            border-width: 1px ;
+        }       
+        }
 	}
 
 	#right{
         flex-grow:1;
-               background-color:red;
+               background-color:#f2f2f2;
 	}
 }
 

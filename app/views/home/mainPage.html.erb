@@ -34,8 +34,9 @@
 </nav>
 
 
-
-
+<% @chats.each do |member| %>
+ <%= member %><br>
+ <% end %>
 
 
 
@@ -46,8 +47,13 @@
 
 
 <section id="middle">
-
-
+ <nav id="inbetween">
+ <div id="one">
+ </div>
+ <div id="two"></div>
+ <div id="three"></div>
+ <div id="four"></div>
+ </nav>
 
 </section>
 <section id="right"></section>	

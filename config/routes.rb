@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :views
   resources :groupparticipants
   devise_for :users,:controllers=>{registrations:'registrations'}
   get 'home/mainPage'
@@ -8,7 +9,7 @@ Rails.application.routes.draw do
   post '/home/creategroup'
   get '/home/invitecontact'
   post '/home/sendmail'=>'home#sendmail'
-
+  get 'home/personalChat'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

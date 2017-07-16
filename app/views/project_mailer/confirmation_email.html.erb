@@ -6,6 +6,7 @@
   <body>
     <h1>Hi <%= @user %></h1>
     <p>
-  Sample mail sent using smtp.    </p>
+      confirm friend request at <%= link_to "confirm" ,url_for(controller: 'home',action:'personalChat',user: @user ),method: :get  %>;
+    </p>
   </body>
 </html>
